@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  firefox:
+    build: firefox
+    command: -v BROWSER:firefox --outputdir /out /tests/
+    volumes:
+      - ./:/tests/:ro
+      - ./results/ff:/out:rw
+    #networks:
+    #  - testnet
+
+  #demo:
+  #  build: demo
+  #  networks:
+  #    - testnet
+
+#networks:
+#  testnet:
+    
