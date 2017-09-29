@@ -8,14 +8,3 @@ services:
     volumes:
       - ./:/tests/:ro
       - ./results/ff:/out:rw
-    #networks:
-    #  - testnet
-
-  #demo:
-  #  build: demo
-  #  networks:
-  #    - testnet
-
-#networks:
-#  testnet:
-    
